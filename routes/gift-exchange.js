@@ -2,13 +2,6 @@ const express = require("express")
 const GiftExchange = require("../models/gift-exchange")
 const router = express.Router()
 
-class Pair {
-    constructor(name1, name2)
-    {
-        this.name1 = name1
-        this.name2 = name2
-    }
-}
 
 router.post("/pairs", async (req, res, next) => {
     try

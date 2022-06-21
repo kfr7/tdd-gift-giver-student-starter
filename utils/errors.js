@@ -20,16 +20,10 @@ class NotFoundError extends ExpressError {
     }
 }
 
-class OddError extends BadRequestError {
-    constructor(message="Odd Amount Array Given") {
-        super(message)
-    }
-}
 
 
 module.exports = {
     ExpressError,
     NotFoundError,
     BadRequestError,
-    OddError,
 }

@@ -1,5 +1,5 @@
 // MODEL
-const { BadRequestError, OddError } = require("../utils/errors")
+const { BadRequestError } = require("../utils/errors")
 
 class GiftExchange {
     static async pairs(names) {
