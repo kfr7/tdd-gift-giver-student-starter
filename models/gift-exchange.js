@@ -2,7 +2,7 @@
 const { BadRequestError } = require("../utils/errors")
 
 class GiftExchange {
-    static async pairs(names) {
+    static pairs(names) {
         if (!names)
         {
             throw new BadRequestError("Names value not given in request body.")
@@ -29,7 +29,7 @@ class GiftExchange {
 
     }
 
-    static async traditional(names) {
+    static traditional(names) {
         if (!names)
         {
             throw new BadRequestError("Names value not given in request body.")
@@ -64,62 +64,62 @@ class GiftExchange {
 
     }
 
-    static async quiz() { 
-        return (
-        [
-            {
-              question: "question #1",
-              answerChoices: [
-                "a. first answer choice",
-                "b. second answer choice",
-                "c. third answer choice",
-                "d. fourth answer choice",
-              ],
-            },
-            {
-              question: "question #2",
-              answerChoices: [
-                "a. first answer choice",
-                "b. second answer choice",
-                "c. third answer choice",
-                "d. fourth answer choice",
-              ],
-            },
-            {
-                question: "question #3",
-                answerChoices: [
-                  "a. first answer choice",
-                  "b. second answer choice",
-                  "c. third answer choice",
-                  "d. fourth answer choice",
-                ],
-              },
-              {
-                question: "question #4",
-                answerChoices: [
-                  "a. first answer choice",
-                  "b. second answer choice",
-                  "c. third answer choice",
-                  "d. fourth answer choice",
-                ],
-              },
-              {
-                question: "question #5",
-                answerChoices: [
-                  "a. first answer choice",
-                  "b. second answer choice",
-                  "c. third answer choice",
-                  "d. fourth answer choice",
-                ],
-              },
+    // static async quiz() { 
+    //     return (
+    //     [
+    //         {
+    //           question: "question #1",
+    //           answerChoices: [
+    //             "a. first answer choice",
+    //             "b. second answer choice",
+    //             "c. third answer choice",
+    //             "d. fourth answer choice",
+    //           ],
+    //         },
+    //         {
+    //           question: "question #2",
+    //           answerChoices: [
+    //             "a. first answer choice",
+    //             "b. second answer choice",
+    //             "c. third answer choice",
+    //             "d. fourth answer choice",
+    //           ],
+    //         },
+    //         {
+    //             question: "question #3",
+    //             answerChoices: [
+    //               "a. first answer choice",
+    //               "b. second answer choice",
+    //               "c. third answer choice",
+    //               "d. fourth answer choice",
+    //             ],
+    //           },
+    //           {
+    //             question: "question #4",
+    //             answerChoices: [
+    //               "a. first answer choice",
+    //               "b. second answer choice",
+    //               "c. third answer choice",
+    //               "d. fourth answer choice",
+    //             ],
+    //           },
+    //           {
+    //             question: "question #5",
+    //             answerChoices: [
+    //               "a. first answer choice",
+    //               "b. second answer choice",
+    //               "c. third answer choice",
+    //               "d. fourth answer choice",
+    //             ],
+    //           },
            
-          ]
-        )
-    }
+    //       ]
+    //     )
+    // }
 
-    static async quizResults() { 
-        pass
-    }
+    // static async quizResults() { 
+    //     pass
+    // }
 }
 
 module.exports = GiftExchange
